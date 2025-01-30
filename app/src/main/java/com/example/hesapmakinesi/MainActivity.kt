@@ -2,6 +2,7 @@ package com.example.hesapmakinesi
 
 import android.app.Activity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             sonuc=birinciGirdi!!+ikinciGirdi!!
             binding.sonucGoster.setText("İşlem Sonucu:${sonuc}")
         }else{
-            binding.sonucGoster.setText("İşlem yapmak istediğiniz sayıları giriniz!")
+            Toast.makeText(this,"İşlem yapmak istediğiniz sayıları giriniz!!",Toast.LENGTH_LONG).show()
         }
 
     }
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             sonuc=birinciGirdi!!-ikinciGirdi!!
             binding.sonucGoster.setText("İşlem Sonucu:${sonuc}")
         }else{
-            binding.sonucGoster.setText("İşlem yapmak istediğiniz sayıları giriniz!")
+            Toast.makeText(this,"İşlem yapmak istediğiniz sayıları giriniz!!",Toast.LENGTH_LONG).show()
         }
 
 
@@ -87,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             sonuc=birinciGirdi!!/ikinciGirdi!!
             binding.sonucGoster.setText("İşlem Sonucu:${sonuc}")
         }else{
-            binding.sonucGoster.setText("İşlem yapmak istediğiniz sayıları giriniz!")
+            Toast.makeText(this,"İşlem yapmak istediğiniz sayıları giriniz!!",Toast.LENGTH_LONG).show()
         }
 
 
@@ -100,7 +101,7 @@ class MainActivity : AppCompatActivity() {
             sonuc=birinciGirdi!!*ikinciGirdi!!
             binding.sonucGoster.setText("İşlem Sonucu:${sonuc}")
         }else{
-            binding.sonucGoster.setText("İşlem yapmak istediğiniz sayıları giriniz!")
+            Toast.makeText(this,"İşlem yapmak istediğiniz sayıları giriniz!!",Toast.LENGTH_LONG).show()
         }
 
 
